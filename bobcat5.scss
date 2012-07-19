@@ -52,7 +52,8 @@ section {
 }
 
 /* Links */
-a { 
+
+.bobcat a { 
 	text-decoration: none;
 	color: $link_color;
 	&:visited {
