@@ -43,6 +43,7 @@ section {
 	  // Blueprint percentage two column layout - doesnt work right
 		//@include column($blueprint-liquid-grid-columns - ($blueprint-liquid-grid-columns / 6), true);
  		margin-left: $padding_standard;
+ 		margin-right: $padding_standard;
  		@include clearfix;
  		overflow-x: auto;
 	} 
