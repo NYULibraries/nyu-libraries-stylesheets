@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 { font-family: $header_fonts; }
 }
 
 /* Default Text style */
-.defaultTextActive { color: scale-lightness($base_color, -90%); font-style: italic; }
+.defaultTextActive { color: $base_color; font-style: italic; }
 
 /* ThemeRoller overrides */
 .ui-widget-content a { color: blue; }
@@ -123,6 +123,7 @@ a.cmslink {
 }
 
 a.iconlink:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
+
 
