@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 { font-family: $header_fonts; }
 }
 
 /* Default Text style */
-.defaultTextActive { color: scale-lightness($base_color, 60%); font-style: italic; }
+.defaultTextActive { color: #666; font-style: italic; }
 
 /* ThemeRoller overrides */
 .ui-widget-content a { color: blue; }
