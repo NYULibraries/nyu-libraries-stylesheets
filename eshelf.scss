@@ -3,7 +3,7 @@
 
 /* Styles specific to eshelf child of bobcat */
 .eshelf {
-  
+
   // Change positioning of sidebar
   .sidebar {
 		@include sidebar;
@@ -11,8 +11,8 @@
 		margin-left: $padding_standard;
 		width: $sidebar-width * .75;
 	}
-	// Change padding of content 
-	.content { 
+	// Change padding of content
+	.content {
 		margin-right: $padding_standard;
 		padding: $padding_standard;
 	}
@@ -20,12 +20,12 @@
 
   /* Media Queries */
   @media print, screen and (max-width: 768px) {
-    @include narrow-layout-eshelf; 
+    @include narrow-layout-eshelf;
   }
 
   /* Set table styles for inside main content section */
   .content {
-    @extend #results; 
+    @extend #results;
   	#resultsList {
   		li.result, #resultsList div.appetizer {
   			padding-left: 0px;
@@ -74,7 +74,7 @@
   	padding-bottom:5px;
    	label {
   		padding-left:5px;
-  	}	
+  	}
   	&.checkall_checkbox_end {
   		border-top: 2px solid #D9D9D9;
   		padding-top: 15px;
@@ -86,14 +86,14 @@
   	border-top: 2px solid #cfcfd0;
   }
 
-  // Pagination 
+  // Pagination
   .pagination {
   	text-align: left;
   	margin-bottom: 5px;
   	margin-top: 7px;
   }
 
-  // JS Tags 
+  // JS Tags
   div.tags_pre, div.js_tags_wrapper, div.js_tags_input_wrapper, a.js_tags_action, ul.js_tags_list, ul.js_tags_list li {
   	display: inline;
   }
@@ -125,8 +125,8 @@
   	background-position: 80%;
   }
 
-  .row-even { @extend .even; }
-  .row-odd { @extend .odd; }
+  .row-even { @extend .even !optional; }
+  .row-odd { @extend .odd !optional; }
 
   .req {
     color: $required_field;
@@ -136,8 +136,5 @@
     width: $padding_small * .3;
     height: $padding_small * .3;
   }
-  
+
 } // close eshelf container
-
-
-
