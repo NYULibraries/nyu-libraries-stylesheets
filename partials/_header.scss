@@ -3,12 +3,13 @@
 */
 header {
 	background-color: white;
-	margin-bottom: $padding_standard;
+	background-color: $nyu_purple;
+	margin: auto;
+	padding: 30px;
 	> h1 span { visibility: hidden; position: absolute; }
 	h1 {
-		background: $top_logo_color url($top_banner) top left no-repeat;
 		margin: 0;
-		height: 67px;	
+		height: 67px;
 	}
 	hgroup {
 		margin-top: 2em;
@@ -19,7 +20,7 @@ header {
 			background: white url($eshelf_image) no-repeat top left;
 			margin: 0 0 0 $padding_tiny;
 			padding: 0 0 0 95px;
-			font-size: 300%;	
+			font-size: 300%;
 			line-height: 65px;
 		}
 		.username {
@@ -42,32 +43,6 @@ header {
 			margin-right: $padding_standard;
 		}
 	}
-	nav { 
-		width: 100%;
-		background-color: $breadcrumb_bg;
-		overflow: auto;
-		ul {
-			@include no-style-list;
-			@include no-margin;
-			padding: 10px 18px;	
-			li {
-				@include no-style-list-item;
-				display: inline;
-				background-color: $breadcrumb_bg none;
-				font-size: 90%;
-				color: $breadcrumb_text;
-				font-family: $text_fonts;
-			}
-			&.breadcrumbs li:after {
-				content: " > ";
-			}
-			&.breadcrumbs li.last:after {
-				content: "";
-			}
-		}
-		.breadcrumbs { @include float-left }
-		.login { @include float-right }
-	}
 	div#bobcat_logo {
 		@include no-padding;
 		@include float-right;
@@ -85,4 +60,31 @@ header {
 		margin-left: 18px;
 		position: absolute;
 	}
+}
+nav {
+	margin-bottom: $padding_standard;
+	width: 100%;
+	background-color: $breadcrumb_bg;
+	overflow: auto;
+	ul {
+		@include no-style-list;
+		@include no-margin;
+		padding: 10px 18px;
+		li {
+			@include no-style-list-item;
+			display: inline;
+			background-color: $breadcrumb_bg none;
+			font-size: 90%;
+			color: $breadcrumb_text;
+			font-family: $text_fonts;
+		}
+		&.breadcrumbs li:after {
+			content: " > ";
+		}
+		&.breadcrumbs li.last:after {
+			content: "";
+		}
+	}
+	.breadcrumbs { @include float-left }
+	.login { @include float-right }
 }
