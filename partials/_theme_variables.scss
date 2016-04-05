@@ -40,7 +40,7 @@ $check_availability_color: #d64516;
 $nyu_purple: #57068c;
 
 //Images
-$images_url: "/images";
+$images_url: "/images" !default;
 $header_bg_image: $images_url + "/header_bg_dark.gif";
 $header_bg_image_light: $images_url + "/header_bg_light.gif";
 $eshelf_image: $images_url + "/eshelf.gif";
