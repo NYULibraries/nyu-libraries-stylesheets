@@ -11,56 +11,57 @@ header {
 		margin: 0;
 		height: 67px;
 	}
-	hgroup {
-		margin-top: 2em;
-		display: block;
- 		h1 {
-			@include float-left;
-			font-weight: normal;
-			background: white url($eshelf_image) no-repeat top left;
-			margin: 0 0 0 $padding_tiny;
-			padding: 0 0 0 95px;
-			font-size: 300%;
-			line-height: 65px;
-		}
-		.username {
-			@include float-left;
-			@include page-header-text;
-			@include page-header-small-spacing;
-		}
-	 	.what-is {
-			@include float-left;
-			padding-left: 66px;
-		}
-		.back-to-home {
-			@include float-right;
-			@include page-header-text;
-		}
-	 .back-to-results {
-			@include float-right;
-			@include page-header-text;
-			@include page-header-small-spacing;
-			margin-right: $padding_standard;
-		}
+}
+hgroup {
+	margin-top: 2em;
+	display: block;
+		h1 {
+		@include float-left;
+		font-weight: normal;
+		background: white url($eshelf_image) no-repeat top left;
+		margin: 0 0 0 $padding_tiny;
+		padding: 0 0 0 95px;
+		font-size: 300%;
+		line-height: 65px;
 	}
-	div#bobcat_logo {
-		@include no-padding;
+	.username {
+		@include float-left;
+		@include page-header-text;
+		@include page-header-small-spacing;
+	}
+ 	.what-is {
+		@include float-left;
+		padding-left: 66px;
+	}
+	.back-to-home {
 		@include float-right;
-		width: 130px;
-		height: 67px;
-		line-height: 67px;
-		background: transparent url($bobcat_logo) no-repeat center center;
-		margin: 0 $padding_tiny;
+		@include page-header-text;
 	}
-	#hd_link_to_home {
-		height: 38px;
-		width: 147px;
-		z-index: 100;
-		margin-top: 18px;
-		margin-left: 18px;
-		position: absolute;
+ .back-to-results {
+		@include float-right;
+		@include page-header-text;
+		@include page-header-small-spacing;
+		margin-right: $padding_standard;
 	}
 }
+div#bobcat_logo {
+	@include no-padding;
+	@include float-right;
+	width: 130px;
+	height: 67px;
+	line-height: 67px;
+	background: transparent url($bobcat_logo) no-repeat center center;
+	margin: 0 $padding_tiny;
+}
+#hd_link_to_home {
+	height: 38px;
+	width: 147px;
+	z-index: 100;
+	margin-top: 18px;
+	margin-left: 18px;
+	position: absolute;
+}
+
 nav {
 	margin-bottom: $padding_standard;
 	width: 100%;
